@@ -2,7 +2,7 @@
 
 package test
 
-import com.relicfragments.logic.solver._
+import com.logic.solver._
 
 object TestSatSolver {
   println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
