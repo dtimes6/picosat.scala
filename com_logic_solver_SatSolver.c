@@ -39,6 +39,12 @@ JNICALL Java_com_logic_solver_SatSolver_add_1clause
     env->ReleaseIntArrayElements(array, head, 0);
 }
 
+JNIEXPORT void
+JNICALL Java_com_logic_solver_SatSolver_assume
+(JNIEnv *env, jobject obj, jint lit) {
+    picosat_assume(picosat, lit);
+}
+
 JNIEXPORT jintArray
 JNICALL Java_com_logic_solver_SatSolver_solve
 (JNIEnv *env, jobject obj) {
