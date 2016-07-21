@@ -15,4 +15,5 @@ class SatSolver {
   @native def reset();
   @native def add_clause(lits:Array[Int]);
   @native def solve():Array[Int];
+  @native def assmue(lit:Int);
 }
