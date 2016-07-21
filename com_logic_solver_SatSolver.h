@@ -33,6 +33,14 @@ JNIEXPORT void JNICALL Java_com_logic_solver_SatSolver_add_1clause
 
 /*
  * Class:     com_logic_solver_SatSolver
+ * Method:    assume
+ * Signature: (I)V
+ */
+JNIEXPORT void JNICALL Java_com_logic_solver_SatSolver_assume
+  (JNIEnv *, jobject, jint);
+
+/*
+ * Class:     com_logic_solver_SatSolver
  * Method:    solve
  * Signature: ()[I
  */
